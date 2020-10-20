@@ -1,6 +1,6 @@
 package part2actors.exercise
 
-/*import java.util.NoSuchElementException
+import java.util.NoSuchElementException
 
 import scala.collection.immutable.Queue
 import scala.util.{Failure, Success, Try}
@@ -85,66 +85,18 @@ class JobRunnerClass extends JobRunner /*extends JobQueueClass *//*with Job with
       case Failure(exception) => println(exception)
     }
 
-     println("execution Result Count=="+executionResult)
+    println("execution Result Count=="+executionResult)
   }
 
+}
 
-}*/
+object NewTest extends App{
 
-object CounterActor extends App{
-
-  /*val jobRunnerDemo = new JobRunnerClass
+  val jobRunnerDemo = new JobRunnerClass
   println(jobRunnerDemo.version)
 
   val jQObject= new JobQueueClass
   jobRunnerDemo.runner(jQObject, 1)
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*
-
-  /// Actor Start
-  class CounterActorDemo extends Actor{
-    import CounterActorDemo._
-
-    var value = 0
-    override def receive: Receive = {
-
-      case Increment(amount) => value = value + amount
-      case Decrement(amount) => value = value - amount
-      case Print => println(s"current value for counter: $value")
-    }
-  }
-
-  val system = ActorSystem("CounterActorDemo")
-  val countActor = system.actorOf(Props[CounterActorDemo],"countActor")
-
-  object CounterActorDemo{
-
-    case class Increment(amount: Int)
-    case class Decrement(amount: Int)
-    case object Print
-  }
-
-  import CounterActorDemo._
-  countActor ! Increment(20)
-  countActor ! Decrement(3)
-  countActor ! Print*/
 
 }
+

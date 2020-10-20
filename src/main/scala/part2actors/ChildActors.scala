@@ -39,4 +39,12 @@ object ChildActors extends App {
   parent ! CreateChild("child")
   parent ! TellChild("Hey Child, How are you?")
 
+
+  /**
+    * Actor Selection
+    */
+
+  val childSelection = system.actorSelection("/user/parent/child2")
+    childSelection ! "I found you"
 }
+

@@ -2,7 +2,7 @@ name := "RTJ-AkkaEssentials"
 
 version := "0.1"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.3"
 
 val akkaVersion = "2.5.13"
 
