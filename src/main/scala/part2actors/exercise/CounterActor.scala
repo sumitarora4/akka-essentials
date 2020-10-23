@@ -1,5 +1,7 @@
 package part2actors.exercise
 
+import akka.actor.{Actor, ActorSystem, Props}
+
 /*import java.util.NoSuchElementException
 
 import scala.collection.immutable.Queue
@@ -117,7 +119,7 @@ object CounterActor extends App{
 
 
 
-  /*
+
 
   /// Actor Start
   class CounterActorDemo extends Actor{
@@ -145,6 +147,6 @@ object CounterActor extends App{
   import CounterActorDemo._
   countActor ! Increment(20)
   countActor ! Decrement(3)
-  countActor ! Print*/
+  countActor ! Print
 
 }
