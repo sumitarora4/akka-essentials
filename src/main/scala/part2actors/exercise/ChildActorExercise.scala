@@ -2,15 +2,21 @@ package part2actors.exercise
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 
-object ChildActorExercise extends App{
 
+trait WordCounterMaster{
+  def Initialize(nChildern: Int)
+  def WordCountTask(id: Int, text: String)
+  def WordCountReply(id: Int, count: Int)
+}
+
+object ChildActorExercise extends App{
 
   object WordCounterMaster{
     case class Initialize(nChildern: Int)
     case class WordCountTask(id: Int, text: String)
     case class WordCountReply(id: Int, count: Int)
   }
-  class WordCounterMaster extends Actor{
+  class WordCounterMaster extends /*WordCounterMaster with*/ Actor{
 
     import WordCounterMaster._
     override def receive: Receive = {

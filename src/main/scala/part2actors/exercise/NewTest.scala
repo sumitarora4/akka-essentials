@@ -68,7 +68,7 @@ class JobQueueClass extends JobQueue {
 
 
 
-case class Report(customerId: Long, uniqueId: Long, duration: Int)
+//case class Report(customerId: Long, uniqueId: Long, duration: Int)
 
 class JobRunnerClass extends JobRunner /*extends JobQueueClass *//*with Job with JobQueue*/ {
 

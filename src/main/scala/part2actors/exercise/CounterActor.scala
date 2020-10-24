@@ -1,6 +1,6 @@
 package part2actors.exercise
 
-import akka.actor.{Actor, ActorSystem, Props}
+import akka.actor.{Actor, ActorSystem, Props, Stash}
 
 /*import java.util.NoSuchElementException
 
@@ -122,7 +122,7 @@ object CounterActor extends App{
 
 
   /// Actor Start
-  class CounterActorDemo extends Actor{
+  class CounterActorDemo extends Actor with Stash{
     import CounterActorDemo._
 
     var value = 0
